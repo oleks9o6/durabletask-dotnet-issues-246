@@ -1,0 +1,20 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "durableTask": {
+      "hubName": "ReportManager",
+      "storageProvider": {
+        "type": "mssql",
+        "connectionStringName": "DURABLE_TASK_SQL_CONNECTION",
+        "taskEventLockTimeout": "00:02:00",
+        "createDatabaseIfNotExists": true,
+        "schemaName": "dt"
+      }
+    }
+  },
+  "logging": {
+    "console": {
+      "isEnabled": true
+    }
+  }
+}
